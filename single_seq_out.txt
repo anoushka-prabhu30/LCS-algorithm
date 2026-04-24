@@ -1,0 +1,28 @@
+LONGEST COMMON SUBSEQUENCE ANALYSIS
+====================================
+Input file: error_single_seq.txt
+Generated on: Fri Nov 14 11:37:58 EST 2025
+
+INPUT SEQUENCES:
+----------------
+S1: ACGTACGT
+S1 Length: 8
+
+DYNAMIC PROGRAMMING RESULTS:
+============================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+
+EFFICIENCY ANALYSIS:
+====================
+Dynamic Programming: O(m*n) time and space complexity
+Brute Force: O(2^(m+n)) exponential time complexity
+Brute Force Practical Limit: ~12 characters
+
+Total sequence pairs analyzed: 0
+Small pairs suitable for brute force: 0
+
+ASYMPTOTIC DATA SUMMARY:
+========================
+String Size  DP Time(ns)  DP Comparisons  Theoretical m×n
+----------------------------------------------------------------

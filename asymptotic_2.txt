@@ -1,0 +1,4 @@
+S1 = AC
+S2 = TG
+S3 = AT
+S4 = GC

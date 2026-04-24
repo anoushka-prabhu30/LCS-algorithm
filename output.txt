@@ -1,0 +1,39 @@
+LONGEST COMMON SUBSEQUENCE ANALYSIS
+====================================
+Input file: input.txt
+Generated on: Thu Nov 13 22:37:49 EST 2025
+
+INPUT SEQUENCES:
+----------------
+S1: ACCGGTCGACTGCGCGGAAGCCGGCCGAA
+S1 Length: 29
+S2: GTCGTTCGGAATGCCGTTGCTCTGTAAA
+S2 Length: 28
+S3: ATTGCATTGCATGGGCGCGATGCATTTGGTTAATTCCTCG
+S3 Length: 40
+S4: CTTGCTTAAATGTGCA
+S4 Length: 16
+
+DYNAMIC PROGRAMMING RESULTS:
+============================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      20       845          161900       GTCGTCGGAAGCCGG...  
+S1-S3      19       1210         142700       ATGCTGCGCGGAGCG...  
+S1-S4      11       496          58300        CTTGCAAGGCA         
+S2-S3      20       1167         104000       TGTTGATGCCGTGCT...  
+S2-S4      12       478          46900        CTTGAATGTGCA        
+S3-S4      13       679          81500        CTTGCTTAAATTG       
+
+EFFICIENCY ANALYSIS:
+====================
+Total sequence pairs analyzed: 6
+Small pairs suitable for brute force: 0
+Dynamic Programming Complexity: O(m*n)
+Brute Force Complexity: O(2^n) exponential
+
+ASYMPTOTIC DATA SUMMARY:
+========================
+Avg Size     Avg Time(ns) Avg Comparisons
+------------------------------------------------
+28           93366        812            

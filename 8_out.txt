@@ -1,0 +1,52 @@
+LONGEST COMMON SUBSEQUENCE ANALYSIS
+====================================
+Input file: asymptotic_8.txt
+Generated on: Fri Nov 14 13:51:09 EST 2025
+
+INPUT SEQUENCES:
+----------------
+S1: ACGTACGT
+S1 Length: 8
+S2: TGACTGAC
+S2 Length: 8
+S3: AACCGGTT
+S3 Length: 8
+S4: TTGGCCAA
+S4 Length: 8
+
+DYNAMIC PROGRAMMING RESULTS:
+============================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      5        64           79100        ACTAC               
+S1-S3      5        64           12200        AACGT               
+S1-S4      2        64           12000        TT                  
+S2-S3      3        64           9900         AAC                 
+S2-S4      4        64           10500        TTGC                
+S3-S4      2        64           11400        TT                  
+
+BRUTE FORCE RESULTS (SMALL PAIRS):
+===================================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      5        50514        3153400      ACTAC                [MATCH]
+S1-S3      5        77665        3702700      AACGT                [MATCH]
+S1-S4      2        45648        1782100      TT                   [MATCH]
+S2-S3      3        49165        1885500      AAC                  [MATCH]
+S2-S4      4        69074        2123400      TTGC                 [MATCH]
+S3-S4      2        39971        1311900      TT                   [MATCH]
+
+EFFICIENCY ANALYSIS:
+====================
+Dynamic Programming: O(m*n) time and space complexity
+Brute Force: O(2^(m+n)) exponential time complexity
+Brute Force Practical Limit: ~15 characters
+
+Total sequence pairs analyzed: 6
+Small pairs suitable for brute force: 6
+
+ASYMPTOTIC DATA SUMMARY:
+========================
+String Size  DP Time(ns)  DP Comparisons  Theoretical m×n
+----------------------------------------------------------------
+8            16300        64              64             

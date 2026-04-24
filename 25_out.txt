@@ -1,0 +1,41 @@
+LONGEST COMMON SUBSEQUENCE ANALYSIS
+====================================
+Input file: asymptotic_25.txt
+Generated on: Fri Nov 14 20:10:14 EST 2025
+
+INPUT SEQUENCES:
+----------------
+S1: ACGTACGTACGTACGTACGTACGTA
+S1 Length: 25
+S2: TGACTGACTGACTGACTGACTGACT
+S2 Length: 25
+S3: AACCGGTTAACCGGTTAACCGGTTA
+S3 Length: 25
+S4: TTGGCCAACCGGTTGGCCAACCGGT
+S4 Length: 25
+
+DYNAMIC PROGRAMMING RESULTS:
+============================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      18       625          224700       ACTACTACTACTACT...  
+S1-S3      16       625          84700        AACCGGTACGTACGT...  
+S1-S4      12       625          60400        TTGGACGTACGT        
+S2-S3      12       625          78800        AACCGGACGACT        
+S2-S4      13       625          57800        TTGGCCACTGACT       
+S3-S4      17       625          58400        TTAACCGGTTAACCG...  
+
+EFFICIENCY ANALYSIS:
+====================
+Dynamic Programming: O(m*n) time and space complexity
+Brute Force: O(2^(m+n)) exponential time complexity
+Brute Force Practical Limit: ~15 characters
+
+Total sequence pairs analyzed: 6
+Small pairs suitable for brute force: 0
+
+ASYMPTOTIC DATA SUMMARY:
+========================
+String Size  DP Time(ns)  DP Comparisons  Theoretical m×n
+----------------------------------------------------------------
+25           63800        625             625            

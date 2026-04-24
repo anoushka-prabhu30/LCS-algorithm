@@ -1,0 +1,2 @@
+S1 = ACGTACGT
+# Only one sequence and cannot compute LCS pairs

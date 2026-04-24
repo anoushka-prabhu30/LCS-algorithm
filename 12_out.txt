@@ -1,0 +1,52 @@
+LONGEST COMMON SUBSEQUENCE ANALYSIS
+====================================
+Input file: asymptotic_12.txt
+Generated on: Fri Nov 14 14:15:01 EST 2025
+
+INPUT SEQUENCES:
+----------------
+S1: TACGTACGTACG
+S1 Length: 12
+S2: TACGTACGTACC
+S2 Length: 12
+S3: TACGTACGTATG
+S3 Length: 12
+S4: TACGTACGTAGG
+S4 Length: 12
+
+DYNAMIC PROGRAMMING RESULTS:
+============================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      11       144          141400       TACGTACGTAC         
+S1-S3      11       144          30700        TACGTACGTAG         
+S1-S4      11       144          30100        TACGTACGTAG         
+S2-S3      10       144          24900        TACGTACGTA          
+S2-S4      10       144          24600        TACGTACGTA          
+S3-S4      11       144          27300        TACGTACGTAG         
+
+BRUTE FORCE RESULTS (SMALL PAIRS):
+===================================
+Pair       LCS Len  Comparisons  Time (ns)    LCS                 
+----------------------------------------------------------------------
+S1-S2      11       10000014     68391900     TACGTACGTAC          [MATCH]
+S1-S3      11       10000011     65950800     TACGTACGTAG          [MATCH]
+S1-S4      11       10000012     40403700     TACGTACGTAG          [MATCH]
+S2-S3      10       10000013     38558100     TACGTACGTA           [MATCH]
+S2-S4      10       10000014     35598000     TACGTACGTA           [MATCH]
+S3-S4      11       10000016     42590100     TACGTACGTAG          [MATCH]
+
+EFFICIENCY ANALYSIS:
+====================
+Dynamic Programming: O(m*n) time and space complexity
+Brute Force: O(2^(m+n)) exponential time complexity
+Brute Force Practical Limit: ~15 characters
+
+Total sequence pairs analyzed: 6
+Small pairs suitable for brute force: 6
+
+ASYMPTOTIC DATA SUMMARY:
+========================
+String Size  DP Time(ns)  DP Comparisons  Theoretical m×n
+----------------------------------------------------------------
+12           17200        144             144            

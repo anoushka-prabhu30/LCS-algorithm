@@ -1,0 +1,4 @@
+S1 = ACGTA
+S2 = TGCAT
+S3 = AATCG
+S4 = GCTAG
