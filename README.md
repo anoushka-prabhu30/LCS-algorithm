@@ -1,4 +1,4 @@
-# Project 3 - Longest Common Subsequence Analysis
+# Longest Common Subsequence Analysis
 
 This project implements and analyzes two different approaches for solving the Longest Common Subsequence (LCS) problem: an efficient dynamic programming solution and a brute force recursive approach. The implementation compares DNA sequences using both algorithms with comprehensive performance metrics including comparison counts and execution timing.
 
